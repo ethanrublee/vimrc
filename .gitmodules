@@ -1,0 +1,3 @@
+[submodule "bundle/Pydiction"]
+	path = bundle/Pydiction
+	url = git://github.com/ethanrublee/Pydiction.git
