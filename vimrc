@@ -14,7 +14,7 @@
 if v:progname =~? "evim"
   finish
 endif
-
+let g:pydiction_location='~/.vimrc/bundles/Pydiction/complete-dict'
 call pathogen#infect()
 
 " Use Vim settings, rather than Vi settings (much better!).
