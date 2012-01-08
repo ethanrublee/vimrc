@@ -17,3 +17,6 @@ Switch to the `~/.vim` directory, and fetch submodules::
     git submodule init
     git submodule update
 
+alot of this is based on:
+  http://sontek.net/turning-vim-into-a-modern-python-ide
+

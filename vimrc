@@ -14,8 +14,10 @@
 if v:progname =~? "evim"
   finish
 endif
-let g:pydiction_location='~/.vimrc/bundles/Pydiction/complete-dict'
+
+
 call pathogen#infect()
+
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -104,4 +106,26 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-autocmd Filetype python setlocal ts=4 sw=4 expandtab
+
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+syntax on                           " syntax highlighing
+filetype on                          " try to detect filetypes
+filetype plugin indent on    " enable loading indent file for filetype
+
+let g:pyflakes_use_quickfix = 0
+
+set foldmethod=indent
+set foldlevel=99
+
+map <leader>tl <Plug>TaskList
+
+let g:pep8_map='<leader>8'
+
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
